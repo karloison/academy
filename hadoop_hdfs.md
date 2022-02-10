@@ -1,30 +1,35 @@
-HDFS Hands on (Lab)
+# **HDFS Hands on (Lab)**
 
-Training video: https://www.youtube.com/watch?v=pfxbNYbnb0c
+Training video: https://www.youtube.com/watch?v=pfxbNYbnb0c 
 
-Pre-req install: 
+
+
+## Pre-req installations: 
 Docker on windows https://www.youtube.com/watch?v=_9AWYlt86B8
+
 Docker on mac https://hub.docker.com/editions/community/docker-ce-desktop-mac
 
+## Setup your Hadoop docker:
 
-Setup your Hadoop docker:
+`$ mkdir hadoop_docker`
 
-$ mkdir hadoop_docker
-$ cd hadoop_docker
-$ git clone https://github.com/m-semnani/bd-infra.git
-$ cd bd-infra
+`$ cd hadoop_docker`
 
-Download the images:
+`$ git clone https://github.com/m-semnani/bd-infra.git`
+
+`$ cd bd-infra`
+
+## Download the images:
+
+`$ docker-compose up -d`
+
+## Verify installation and running images: 
+
+`$ docker ps`
 
 
-$ docker-compose up -d
 
-Verify installation and running images
-$ docker ps
-
-
-
-Verify Namenode: http://localhost:50070/ (if you are running docker in your local machine)
+==Verify Namenode: http://localhost:50070/ (if you are running docker in your local machine)==.
 
 
 Login to the namenode container
